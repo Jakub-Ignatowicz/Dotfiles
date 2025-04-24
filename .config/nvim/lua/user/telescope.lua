@@ -3,14 +3,16 @@ local M = {
   dependencies = { { "nvim-telescope/telescope-fzf-native.nvim", build = "make", lazy = true }},
 }
 
-function M.config()
-  local keymap = vim.keymap.set
-  vim.keymap.set("n", "<leader>bb", "<cmd>Telescope buffers previewer=false<cr>")
-  vim.keymap.set("n", "<leader>fT", "<cmd>Telescope current_buffer_fuzzy_find<cr>")
-  vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
-  vim.keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>")
-  vim.keymap.set("n", "<leader>ft", "<cmd>Telescope live_grep<cr>")
+M.keys = {
+  {"<leader>bb", "<cmd>Telescope buffers previewer=false<cr>", opts},
+  {"<leader>bb", "<cmd>Telescope buffers previewer=false<cr>", opts},
+  {"<leader>fT", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts},
+  {"<leader>ff", "<cmd>Telescope find_files<cr>", opts},
+  {"<leader>fr", "<cmd>Telescope oldfiles<cr>", opts},
+  {"<leader>ft", "<cmd>Telescope live_grep<cr>", opts},
+}
 
+function M.config()
   local icons = require "user.icons"
   local actions = require "telescope.actions"
 

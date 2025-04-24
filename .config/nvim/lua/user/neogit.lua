@@ -3,13 +3,12 @@ local M = {
   event = "VeryLazy",
 }
 
+M.keys = {
+  { "<leader>gg", "<cmd>Neogit<CR>", opts },
+}
+
 function M.config()
   local icons = require "user.icons"
-  local keymap = vim.keymap.set
-  local opts = { noremap = true, silent = true }
-
-  keymap("n", "<leader>gg", "<cmd>Neogit<CR>", opts)
-
   local neogit = require('neogit')
 
   neogit.setup {
