@@ -16,5 +16,6 @@ spec "plugins.cmp"
 spec "plugins.treesitter"
 spec "plugins.schemastore"
 spec "plugins.illuminate"
+spec "plugins.noice"
 
 require "plugins.lazy"
