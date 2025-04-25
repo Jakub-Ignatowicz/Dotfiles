@@ -25,6 +25,7 @@ spec "plugins.lualine"
 spec "plugins.breadcrumbs"
 spec "plugins.navic"
 spec "plugins.harpoon"
+spec "plugins.neotest"
 
 
 require "plugins.lazy"
