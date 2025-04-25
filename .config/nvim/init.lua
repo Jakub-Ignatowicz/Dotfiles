@@ -20,5 +20,6 @@ spec "plugins.noice"
 spec "plugins.tabby"
 spec "plugins.toggleterm"
 spec "plugins.gitsigns"
+spec "plugins.comment"
 
 require "plugins.lazy"
