@@ -21,7 +21,7 @@ M.keys = {
     "<cmd>lua vim.lsp.buf.format({async = true, filter = function(client) return client.name ~= 'typescript-tools' end})<cr>",
     opts,
   },
-  { "<leader>lh", "<cmd>lua require('user.lspconfig').toggle_inlay_hints()<cr>", opts},
+  { "<leader>lh", "<cmd>lua require('basics.lspconfig').toggle_inlay_hints()<cr>", opts},
   { "<leader>li", "<cmd>LspInfo<cr>", opts},
   { "<leader>lj", "<cmd>lua vim.diagnostic.goto_next()<cr>", opts},
   { "<leader>lk", "<cmd>lua vim.diagnostic.goto_prev()<cr>", opts},
@@ -49,7 +49,7 @@ M.toggle_inlay_hints = function()
 end
 
 function M.config()
-  local icons = require "user.icons"
+  local icons = require "basics.icons"
 
   local default_diagnostic_config = {
     signs = {

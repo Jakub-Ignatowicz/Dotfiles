@@ -8,7 +8,7 @@ M.keys = {
 }
 
 function M.config()
-  local icons = require "user.icons"
+  local icons = require "basics.icons"
   local neogit = require('neogit')
 
   neogit.setup {

@@ -13,7 +13,7 @@ M.keys = {
 }
 
 function M.config()
-  local icons = require "user.icons"
+  local icons = require "basics.icons"
   local actions = require "telescope.actions"
 
   require("telescope").setup {

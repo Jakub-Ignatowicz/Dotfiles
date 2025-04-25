@@ -8,7 +8,7 @@ M.keys = {
 }
 
 function M.config()
-  local icons = require "user.icons"
+  local icons = require "basics.icons"
 
   require("nvim-tree").setup {
     hijack_netrw = false,
