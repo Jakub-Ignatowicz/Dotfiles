@@ -13,5 +13,6 @@ spec "plugins.devicons"
 spec "plugins.autopair"
 spec "plugins.none-ls"
 spec "plugins.cmp"
+spec "plugins.treesitter"
 
 require "plugins.lazy"
