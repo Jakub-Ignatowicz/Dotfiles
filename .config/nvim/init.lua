@@ -28,6 +28,7 @@ spec "plugins.harpoon"
 spec "plugins.neotest"
 spec "plugins.alpha"
 spec "plugins.indentline"
+spec "plugins.leetcode"
 
 
 require "plugins.lazy"
