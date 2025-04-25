@@ -27,6 +27,7 @@ spec "plugins.navic"
 spec "plugins.harpoon"
 spec "plugins.neotest"
 spec "plugins.alpha"
+spec "plugins.indentline"
 
 
 require "plugins.lazy"
