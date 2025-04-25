@@ -17,5 +17,7 @@ spec "plugins.treesitter"
 spec "plugins.schemastore"
 spec "plugins.illuminate"
 spec "plugins.noice"
+spec "plugins.tabby"
+spec "plugins.toggleterm"
 
 require "plugins.lazy"
