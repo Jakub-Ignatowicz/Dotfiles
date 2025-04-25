@@ -14,5 +14,6 @@ spec "plugins.autopair"
 spec "plugins.none-ls"
 spec "plugins.cmp"
 spec "plugins.treesitter"
+spec "plugins.schemastore"
 
 require "plugins.lazy"
