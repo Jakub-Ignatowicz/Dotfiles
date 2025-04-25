@@ -24,6 +24,7 @@ spec "plugins.comment"
 spec "plugins.lualine"
 spec "plugins.breadcrumbs"
 spec "plugins.navic"
+spec "plugins.harpoon"
 
 
 require "plugins.lazy"
