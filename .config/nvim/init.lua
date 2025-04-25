@@ -30,6 +30,7 @@ spec "plugins.alpha"
 spec "plugins.indentline"
 spec "plugins.leetcode"
 spec "plugins.colorizer"
+spec "plugins.oil"
 
 
 require "plugins.lazy"
