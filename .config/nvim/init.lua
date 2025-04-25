@@ -31,6 +31,7 @@ spec "plugins.indentline"
 spec "plugins.leetcode"
 spec "plugins.colorizer"
 spec "plugins.oil"
+spec "plugins.ufo"
 
 
 require "plugins.lazy"
