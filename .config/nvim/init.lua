@@ -19,5 +19,6 @@ spec "plugins.illuminate"
 spec "plugins.noice"
 spec "plugins.tabby"
 spec "plugins.toggleterm"
+spec "plugins.gitsigns"
 
 require "plugins.lazy"
