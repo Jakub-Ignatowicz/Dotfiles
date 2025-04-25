@@ -21,5 +21,7 @@ spec "plugins.tabby"
 spec "plugins.toggleterm"
 spec "plugins.gitsigns"
 spec "plugins.comment"
+spec "plugins.lualine"
+
 
 require "plugins.lazy"
