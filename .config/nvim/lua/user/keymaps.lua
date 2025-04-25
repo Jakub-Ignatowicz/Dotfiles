@@ -13,7 +13,27 @@ keymap("n", "<m-j>", "<C-w>j", opts)
 keymap("n", "<m-k>", "<C-w>k", opts)
 keymap("n", "<m-l>", "<C-w>l", opts)
 keymap("n", "<m-tab>", "<c-6>", opts)
+keymap("n", "<leader>v", "<cmd>vsplit<CR>", opts)
 
+-- Tab navigation
+
+keymap("n", "<C-N>", "<cmd>tabnew %<cr>", opts)
+keymap("n", "<C-h>", "<cmd>tabprevious<cr>", opts)
+keymap("n", "<C-l>", "<cmd>tabnext<cr>", opts)
+
+-- Quitting and saving 
+
+keymap("n", "<leader>qQ", "<cmd>qa!<CR>", opts)
+keymap("n", "<leader>qW", "<cmd>wqa!<CR>", opts)
+keymap("n", "<leader>qq", "<cmd>confirm q<CR>", opts)
+keymap("n", "<leader>qw", "<cmd>wq<CR>", opts)
+
+keymap("n", "<leader>w", "<cmd>lua vim.lsp.buf.format()<CR><cmd>w<CR>", opts)
+keymap("n", "<leader>W", "<cmd>w<CR>", opts)
+
+-- Mason
+
+keymap("n", "<leader>m", "<cmd>Mason<CR>", opts)
 
 -- Center on search
 
