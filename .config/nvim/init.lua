@@ -11,5 +11,6 @@ spec "plugins.lspconfig"
 spec "plugins.nvimtree"
 spec "plugins.devicons"
 spec "plugins.autopair"
+spec "plugins.none-ls"
 
 require "plugins.lazy"
