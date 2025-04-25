@@ -53,6 +53,12 @@ function M.config()
 
   local default_diagnostic_config = {
     signs = {
+      text = {
+        [vim.diagnostic.severity.ERROR] = icons.diagnostics.Error,
+        [vim.diagnostic.severity.WARN]  = icons.diagnostics.Warning,
+        [vim.diagnostic.severity.HINT]  = icons.diagnostics.Hint,
+        [vim.diagnostic.severity.INFO]  = icons.diagnostics.Information,
+      },
       active = true,
       values = {
         { name = "DiagnosticSignError", text = icons.diagnostics.Error },
