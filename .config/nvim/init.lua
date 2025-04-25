@@ -10,5 +10,6 @@ spec "plugins.mason"
 spec "plugins.lspconfig"
 spec "plugins.nvimtree"
 spec "plugins.devicons"
+spec "plugins.autopair"
 
 require "plugins.lazy"
