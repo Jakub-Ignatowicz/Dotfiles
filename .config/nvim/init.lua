@@ -29,6 +29,7 @@ spec "plugins.neotest"
 spec "plugins.alpha"
 spec "plugins.indentline"
 spec "plugins.leetcode"
+spec "plugins.colorizer"
 
 
 require "plugins.lazy"
