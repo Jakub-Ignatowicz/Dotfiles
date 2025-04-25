@@ -23,6 +23,7 @@ spec "plugins.gitsigns"
 spec "plugins.comment"
 spec "plugins.lualine"
 spec "plugins.breadcrumbs"
+spec "plugins.navic"
 
 
 require "plugins.lazy"
