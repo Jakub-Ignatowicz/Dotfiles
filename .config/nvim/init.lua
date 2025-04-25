@@ -33,6 +33,7 @@ spec "plugins.colorizer"
 spec "plugins.oil"
 spec "plugins.ufo"
 spec "plugins.fidget"
+spec "plugins.coderunner"
 
 
 require "plugins.lazy"
