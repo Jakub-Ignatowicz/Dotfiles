@@ -1,5 +1,5 @@
 local keymap = vim.keymap.set
-local opts = { noremap = true, silent = true }
+opts = { noremap = true, silent = true }
 
 keymap("n", "<Space>", "", opts)
 vim.g.mapleader = " "
@@ -28,7 +28,7 @@ keymap("n", "<leader>qW", "<cmd>wqa!<CR>", opts)
 keymap("n", "<leader>qq", "<cmd>confirm q<CR>", opts)
 keymap("n", "<leader>qw", "<cmd>wq<CR>", opts)
 
-keymap("n", "<leader>w", "<cmd>lua vim.lsp.buf.format()<CR><cmd>w<CR>", opts)
+keymap("n", "<leader>w", "<cmd>lua vim.lsp.buf.format({async = true, filter = function(client) return client.name ~= 'typescript-tools' end})<cr><cmd>w<CR>", opts)
 keymap("n", "<leader>W", "<cmd>w<CR>", opts)
 
 -- Mason
