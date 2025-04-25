@@ -8,5 +8,7 @@ spec "user.neogit"
 spec "user.colorscheme"
 spec "user.mason"
 spec "user.lspconfig"
+spec "user.nvimtree"
+spec "user.devicons"
 
 require "user.lazy"
