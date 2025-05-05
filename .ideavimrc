@@ -19,11 +19,19 @@ let mapleader=" "
 nmap <leader>ft <Action>(FindInPath)
 nmap <leader>ff <Action>(GotoFile)
 nmap <leader>e <Action>(ActivateProjectToolWindow)
-nmap <A-h> <Action>(SelectPreviousTab)
-nmap <A-l> <Action>(SelectNextTab)
 
 inoremap jk <Esc>
 
+
+" Map Shift+H to move to the beginning of the line (^)
+nmap <S-H> ^
+omap <S-H> ^
+xmap <S-H> ^
+
+" Map Shift+L to move to the end of the visible line (g_)
+nmap <S-L> g_
+omap <S-L> g_
+xmap <S-L> g_
 
 " --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
 
