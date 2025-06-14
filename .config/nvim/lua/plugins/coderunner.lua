@@ -3,24 +3,24 @@ local M = {
 }
 
 M.keys = {
-  {"<leader>rr", ":RunCode<CR>", opts},
-  {"<leader>rf", ":RunFile<CR>", opts},
-  {"<leader>rft", ":RunFile tab<CR>", opts},
-  {"<leader>rp", ":RunProject<CR>", opts},
-  {"<leader>rc", ":RunClose<CR>", opts},
-  {"<leader>crf", ":CRFiletype<CR>", opts},
-  {"<leader>crp", ":CRProjects<CR>", opts},
+  { "<leader>rr",  ":RunCode<CR>",     opts },
+  { "<leader>rf",  ":RunFile<CR>",     opts },
+  { "<leader>rft", ":RunFile tab<CR>", opts },
+  { "<leader>rp",  ":RunProject<CR>",  opts },
+  { "<leader>rc",  ":RunClose<CR>",    opts },
+  { "<leader>crf", ":CRFiletype<CR>",  opts },
+  { "<leader>crp", ":CRProjects<CR>",  opts },
 }
 
 function M.config()
-  require("code_runner").setup {
+  require("code_runner").setup({
     filetype = {
       java = {
         "cd $dir &&",
         "javac $fileName &&",
         "java $fileNameWithoutExt",
       },
-      python = "python3 -u",
+      python = "python -u",
       typescript = "npm run dev",
       rust = {
         "cd $dir &&",
@@ -44,7 +44,7 @@ function M.config()
         end)
       end,
     },
-  }
+  })
 end
 
 return M
