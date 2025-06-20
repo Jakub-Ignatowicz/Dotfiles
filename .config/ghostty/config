@@ -3,8 +3,10 @@ macos-option-as-alt = left
 keybind = alt+left=unbind
 keybind = alt+right=unbind
 
+
 theme = Dark+
-background-opacity = 0.8
+background-opacity = 0.9
+
 # This is the configuration file for Ghostty.
 #
 # This template file has been automatically created at the following
