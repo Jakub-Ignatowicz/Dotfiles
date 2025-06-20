@@ -50,6 +50,8 @@
 !.config/ghostty/config
 !.config/aerospace/aerospace.toml
 !.config/sketchybar
+!.config/sketchybar/plugin
+!.config/sketchybar/plugin/*
 !.config/sketchybar/*
 !.config/neofetch
 !.config/neofetch/*
