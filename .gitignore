@@ -43,12 +43,15 @@
 
 # Accept configs
 !.config
+!.config/nvim
 !.config/nvim/*
 .config/nvim/lazy-lock.json
 !.config/karabiner/karabiner.json
 !.config/ghostty/config
 !.config/aerospace/aerospace.toml
+!.config/sketchybar
 !.config/sketchybar/*
+!.config/neofetch
 !.config/neofetch/*
 
 # Rust!
