@@ -13,7 +13,7 @@ PLUGIN_DIR="$CONFIG_DIR/plugins"
 # If you are looking for other colors, see the color picker:
 # https://felixkratz.github.io/SketchyBar/config/tricks#color-picker
 
-sketchybar --bar position=top height=40 blur_radius=30 y_offset=6 margin=12 corner_radius=10 color=0x40000000 padding_left=0 padding_right=0
+sketchybar --bar position=top height=40 blur_radius=30 y_offset=6 margin=12 corner_radius=10 color=0x40000000 padding_left=6 padding_right=6
   
 
 ##### Changing Defaults #####
@@ -32,7 +32,10 @@ default=(
   icon.padding_right=4
   label.padding_left=4
   label.padding_right=4
+  background.color=0x00000000  # Explicitly set transparent background
+  background.drawing=off       # Explicitly turn off background drawing
 )
+
 sketchybar --default "${default[@]}"
 
 ##### Adding Mission Control Space Indicators #####
