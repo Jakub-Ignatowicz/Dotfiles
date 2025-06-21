@@ -52,7 +52,9 @@
 !.config/sketchybar
 !.config/sketchybar/plugin
 !.config/sketchybar/plugin/*
+!.config/sketchybar/plugin/**
 !.config/sketchybar/*
+!.config/sketchybar/**
 !.config/neofetch
 !.config/neofetch/*
 
