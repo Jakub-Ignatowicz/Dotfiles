@@ -1,9 +1,11 @@
 local M = {
-  "LunarVim/breadcrumbs.nvim",
+	"LunarVim/breadcrumbs.nvim",
 }
 
 function M.config()
-  require("breadcrumbs").setup()
+	vim.api.nvim_set_hl(0, "WinBar", { bg = "none" })
+	vim.api.nvim_set_hl(0, "WinBarNC", { bg = "none" })
+	require("breadcrumbs").setup()
 end
 
 return M
