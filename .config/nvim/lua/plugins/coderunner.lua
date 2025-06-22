@@ -5,7 +5,7 @@ local M = {
 M.keys = {
   { "<leader>rr",  ":RunCode<CR>",     opts },
   { "<leader>rf",  ":RunFile<CR>",     opts },
-  { "<leader>rft", ":RunFile tab<CR>", opts },
+  { "<leader>rt",  ":RunFile tab<CR>", opts },
   { "<leader>rp",  ":RunProject<CR>",  opts },
   { "<leader>rc",  ":RunClose<CR>",    opts },
   { "<leader>crf", ":CRFiletype<CR>",  opts },
