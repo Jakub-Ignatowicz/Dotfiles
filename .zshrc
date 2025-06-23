@@ -21,4 +21,6 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 alias ls='colorls'
 alias lsa='colorls -a'
+alias notes='nvim -c "Neorg workspace notes"'
+
 export PATH="/usr/local/opt/postgresql@16/bin:$PATH"
