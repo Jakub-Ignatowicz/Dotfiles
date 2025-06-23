@@ -35,5 +35,6 @@ spec("plugins.ufo")
 spec("plugins.fidget")
 spec("plugins.coderunner")
 spec("plugins.ts-autotag")
+spec("plugins.neorg")
 
 require("plugins.lazy")
