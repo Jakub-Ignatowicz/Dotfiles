@@ -9,7 +9,17 @@ function M.config()
   require("neorg").setup({
     load = {
       ["core.defaults"] = {},
-      ["core.concealer"] = {}, -- We added this line!
+      ["core.completion"] = { config = { engine = "nvim-cmp", name = "[Norg]" } },
+      ["core.integrations.nvim-cmp"] = {},
+      ["core.concealer"] = { config = { icon_preset = "diamond" } },
+      ["core.dirman"] = {
+        config = {
+          workspaces = {
+            notes = "~/Documents/Notes",
+          },
+          index = "index.norg",
+        },
+      },
     },
   })
 end
