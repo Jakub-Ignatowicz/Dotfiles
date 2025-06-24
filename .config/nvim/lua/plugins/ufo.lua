@@ -7,7 +7,7 @@ local M = {
 }
 
 function M.config()
-  local builtin = require "statuscol.builtin"
+  local builtin = require("statuscol.builtin")
   local cfg = {
     setopt = true,
     relculright = true,
@@ -15,7 +15,7 @@ function M.config()
 
       { text = { builtin.foldfunc, " " }, click = "v:lua.ScFa", hl = "Comment" },
 
-      { text = { "%s" }, click = "v:lua.ScSa" },
+      { text = { "%s" },                  click = "v:lua.ScSa" },
       { text = { builtin.lnumfunc, " " }, click = "v:lua.ScLa" },
     },
   }
@@ -23,7 +23,7 @@ function M.config()
   require("statuscol").setup(cfg)
 
   vim.o.foldcolumn = "1" -- '0' is not bad
-  vim.o.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
+  vim.o.foldlevel = 99  -- Using ufo provider need a large value, feel free to decrease the value
   vim.o.foldlevelstart = 99
   vim.o.foldenable = true
   vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
@@ -56,6 +56,7 @@ function M.config()
       end
       curWidth = curWidth + chunkWidth
     end
+
     table.insert(newVirtText, { suffix, "MoreMsg" })
     return newVirtText
   end
@@ -66,13 +67,16 @@ function M.config()
     -- git = "",
   }
 
-  require("ufo").setup {
+  require("ufo").setup({
     fold_virt_text_handler = handler,
     close_fold_kinds = {},
     -- close_fold_kinds = { "imports", "comment" },
     provider_selector = function(bufnr, filetype, buftype)
       -- if you prefer treesitter provider rather than lsp,
       -- return ftMap[filetype] or {'treesitter', 'indent'}
+      if filetype == "norg" then
+        return nil -- disable UFO for .norg files
+      end
       return ftMap[filetype]
       -- return { "treesitter", "indent" }
 
@@ -83,7 +87,7 @@ function M.config()
       win_config = {
         border = { "", "─", "", "", "", "─", "", "" },
         winhighlight = "Normal:Folded",
-        winblend = 0,
+        winblend = 10,
       },
       mappings = {
         scrollU = "<C-k>",
@@ -92,8 +96,9 @@ function M.config()
         jumpBot = "]",
       },
     },
-  }
+  })
 
+  vim.api.nvim_set_hl(0, "Folded", { bg = "NONE", fg = "#aaaaaa", italic = true })
   vim.keymap.set("n", "zR", require("ufo").openAllFolds)
   vim.keymap.set("n", "zM", require("ufo").closeAllFolds)
   vim.keymap.set("n", "zr", require("ufo").openFoldsExceptKinds)
